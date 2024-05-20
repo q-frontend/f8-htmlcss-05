@@ -12,7 +12,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  --primary-color: rgb(230, 8, 204);
+  --primary-color: rgb(120, 191, 92);
 }
 input,
 button,
@@ -33,7 +33,7 @@ optgroup {
   border-radius: 14px;
   height: 58px;
   width: 149px;
-  background: #0d0d0d;
+  background: var(--primary-color);
   color: #fff;
   animation: up-down linear 5s;
 }
@@ -63,7 +63,7 @@ header {
   top: -10px;
   z-index: 1;
   padding: 20px 0;
-  background: #ccc;
+  background: #f1eeee;
 }
 
 .logo {
@@ -73,7 +73,7 @@ header {
   column-gap: 10px;
   animation: up-down linear 5s;
 }
-@keyframes up-down {
+/* @keyframes up-down {
   0% {
     scale: 1;
     rotate: 0;
@@ -85,7 +85,7 @@ header {
   100% {
     scale: 1;
     rotate: 360deg;
-  }
+  } */
 }
 .menu {
   margin-left: 30px;
@@ -330,8 +330,9 @@ header {
   margin: 20px auto;
 }
 .download__img {
-  margin: 0 30px;
-  scale: 2;
+  margin: 0 50px;
+height: 100px;
+
 }
 .download__img:hover {
   cursor: pointer;
@@ -390,7 +391,7 @@ header {
 .login {
   max-width: 1000px;
   width: 300px;
-  height: 500px;
+  height: 70vh;
   background: rgb(238, 174, 202);
   background: radial-gradient(
     circle,
